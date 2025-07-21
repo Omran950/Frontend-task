@@ -39,6 +39,15 @@ body {
 
 .button-color {
   background-color: var(--button-color);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.w-85 {
+  width: 85%;
 }
 
 h2 {
@@ -63,34 +72,6 @@ a {
 /* End Global */
 
 /* Navigation Bar */
-.navbar-expand-lg .navbar-nav .nav-link {
-  margin-left: 30px;
-  text-align: center;
-  color: white;
-}
-
-.navbar .navbar-nav a {
-  position: relative;
-}
-
-.navbar .navbar-nav a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: var(--secondert-color);
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  transition: all 0.5s;
-}
-
-.navbar .navbar-nav .active {
-  color: var(--main-color);
-}
-
-.navbar .navbar-nav .active::after {
-  width: 100%;
-}
 
 /* End Navigation Bar */
 
@@ -159,3 +140,29 @@ a.arrow {
 }
 
 /* End Fixed Icon */
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  nav .navbar-example #navbar-example #login-btn {
+    display: none;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+}
+
+/* End Media Queries */
