@@ -15,26 +15,35 @@
 
 body {
   font-family: "Almarai", sans-serif;
+  text-align: right;
 }
 
 :root {
-  --bg-main-color: #101840;
-  --bg-secondary-color: #e5e2f7;
+  --main-color: #101840;
+  --secondary-color: #e5e2f7;
   --text-color: #6d738f;
   --heading-color: #897ae3;
   --button-color: #897ae3;
 }
 
 .bg-mainColor {
-  background-color: var(--bg-main-color);
+  background-color: var(--main-color);
 }
 
 .bg-secondaryColor {
-  background-color: var(--bg-secondary-color);
+  background-color: var(--secondary-color);
 }
 
-.text-mainColor {
+.text-main-heading-color {
   color: var(--heading-color);
+}
+
+.text-sub-heading-color {
+  color: var(--main-color);
+}
+
+.text-font-color {
+  color: var(--text-color);
 }
 
 .button-color {
@@ -53,6 +62,13 @@ body {
 h2 {
   color: var(--heading-color);
   font-family: "Amiri", "Almarai", sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  color: var(--main-color);
+  font-size: 48px;
+  font-weight: 700;
 }
 
 p {
