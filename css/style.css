@@ -18,6 +18,12 @@ body {
   text-align: right;
 }
 
+/* Right-align placeholder text in form inputs */
+.form-control::placeholder {
+  text-align: right;
+  direction: rtl;
+}
+
 :root {
   --main-color: #101840;
   --secondary-color: #e5e2f7;
@@ -76,6 +82,13 @@ ul {
 
 .text-main-heading-color {
   color: var(--heading-color);
+}
+
+.border-main {
+  border: 1px solid var(--button-color);
+}
+.border-secondary {
+  border: 1px solid var(--text-color);
 }
 
 .text-sub-heading-color {
@@ -161,6 +174,11 @@ ul {
   padding: 80px 0;
 }
 
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
 .play {
   width: 120px;
   height: 120px;
@@ -194,7 +212,6 @@ ul {
 
 /* End Global */
 
-/* Hero */
 .hero-image {
   transform: translateX(-17%);
 }
@@ -215,52 +232,12 @@ ul {
   -o-transition: all 0.5s ease;
 }
 
-/* Services */
-
-#services .container .row .card {
-  border: none;
+/* Left Leg */
+.left-leg {
+  position: absolute;
+  top: 10%;
+  right: -7%;
 }
-
-#services .container .row .card span {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border: 10px var(--secondert-color) solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-
-#services .container .row .card i {
-  font-size: 2.5rem;
-  color: black;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-
-#services .container .row .card:hover span {
-  background-color: var(--secondert-color);
-  border-color: #cde1f8;
-}
-
-#services .container .row .card:hover i {
-  color: white;
-}
-
-/* End Services */
 
 /* Fixed Icon */
 a.arrow {
@@ -286,9 +263,14 @@ a.arrow:hover {
 }
 
 .fast-donation {
-  left: 200px;
-  bottom: 150px;
+  left: 100px;
+  bottom: 50px;
   z-index: 99;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* End Fixed Icon */
