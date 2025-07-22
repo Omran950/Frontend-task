@@ -103,23 +103,35 @@
       class="d-flex justify-content-center align-items-center bg-mainColor overflow-hidden"
     >
       <div
-        class="container d-flex justify-content-between align-items-center position-relative"
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center position-relative text-center text-lg-end pt-3"
       >
-        <!-- play icon -->
-        <img src="images/play.png" alt="header" class="play-hero" />
-        <div class="w-50 pt-5">
-          <img src="images/hero-2.png" alt="header" class="hero-image" />
+        <!-- play icon - hidden on mobile/tablet -->
+        <img
+          src="images/play.png"
+          alt="header"
+          class="play-hero d-none d-lg-block"
+        />
+
+        <!-- Large image section - hidden on mobile/tablet -->
+        <div class="col-12 col-lg-6 pt-0 pt-lg-5 order-lg-1 order-2">
+          <img
+            src="images/hero-2.png"
+            alt="header"
+            class="hero-image d-none d-lg-block"
+          />
           <div
-            class="d-flex justify-content-between overflow-hidden hero-image-2"
+            class="d-flex overflow-hidden hero-image-2 justify-content-center justify-content-lg-start"
           >
-            <figure class="w-50 overflow-hidden">
+            <figure class="w-50 overflow-hidden m-0 d-none d-lg-block">
               <img
                 src="/images//hero-1.png"
                 alt="hero image"
-                class="w-100 object-fit-cover"
+                class="object-fit-cover w-100 d-none d-lg-block"
               />
             </figure>
-            <div class="w-50 bg-hero-section-color p-4">
+            <div
+              class="bg-hero-section-color flex-grow-1 p-4 mx-auto d-flex flex-column align-items-center align-items-lg-end text-center text-lg-end w-50"
+            >
               <img src="images/icon.png" alt="logo" class="w-25 mb-4" />
               <p class="text-white fs-24">رعاية شخصية</p>
               <p class="text-white fs-24">
@@ -128,7 +140,7 @@
 
               <div
                 id="discover-btn"
-                class="d-flex align-items-center justify-content-end gap-2 pointer"
+                class="d-flex align-items-center justify-content-center justify-content-lg-end gap-2 pointer"
               >
                 <i class="fa-solid fa-chevron-left text-main-heading-color"></i>
                 <p class="text-main-heading-color fs-24 my-0">اكتشف</p>
@@ -137,7 +149,10 @@
           </div>
         </div>
 
-        <div class="w-50">
+        <!-- Main content - visible on all screens -->
+        <div
+          class="col-12 col-lg-6 pt-5 pt-lg-0 mt-lg-0 mt-5 order-lg-2 order-1"
+        >
           <h2>طريقك إلى التنقل</h2>
           <h3 class="my-4 text-white">
             الرائدة في مجال توفير
@@ -148,7 +163,9 @@
             على استعادة استقلاليتك وإعادة اكتشاف قدراتك
           </p>
           <button type="button" class="btn button-color px-4">اكتشف</button>
-          <ul class="d-flex justify-content-between align-items-center mt-5">
+          <ul
+            class="d-flex justify-content-center justify-content-lg-between align-items-center mt-5 gap-md-4 gap-3 gap-lg-0"
+          >
             <li>
               <p class="mb-0 text-white fs-2 fw-bold text-center">98%</p>
               <p class="text-white fs-24 text-center">راحة الجهاز</p>
