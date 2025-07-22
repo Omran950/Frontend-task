@@ -240,6 +240,7 @@ ul {
   position: absolute;
   top: 10%;
   right: -7%;
+  z-index: -2;
 }
 
 /* Fixed Icons */
@@ -265,15 +266,15 @@ a.arrow:hover {
   -o-transition: all 0.5s ease;
 }
 
+.contact-icon {
+  width: 50px;
+  height: 50px;
+}
+
 .fast-donation {
   left: 100px;
   bottom: 50px;
   z-index: 99;
-}
-
-.contact-icon {
-  width: 50px;
-  height: 50px;
 }
 
 /* scrollbar */
@@ -348,6 +349,10 @@ a.arrow:hover {
   #section3 button {
     width: 50%;
   }
+
+  #section-2 button {
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -356,7 +361,7 @@ a.arrow:hover {
   }
 
   h3 {
-    font-size: 28px !important;
+    font-size: 24px !important;
   }
 
   p {
@@ -377,6 +382,12 @@ a.arrow:hover {
 
   #footer .d-flex.gap-3 {
     justify-content: center !important;
+  }
+
+  .fast-donation {
+    left: 20px;
+    bottom: 20px;
+    z-index: 99;
   }
 }
 

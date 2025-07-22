@@ -102,40 +102,44 @@
       id="home"
       class="d-flex justify-content-center align-items-center bg-secondaryColor vh-100 overflow-hidden"
     >
-      <div
-        class="container pt-5 d-flex justify-content-between align-items-center position-relative"
-      >
-        <div class="w-50">
-          <img
-            src="images/hero-page-2.png"
-            alt="hero"
-            class="hero-image-3 w-100"
-          />
-        </div>
+      <div class="container pt-5 position-relative">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 d-none d-lg-block">
+            <img
+              src="images/hero-page-2.png"
+              alt="hero"
+              class="hero-image-3 w-100"
+            />
+          </div>
 
-        <div class="w-50">
-          <h3>
-            تقديم الرعاية الصحية لمستخدمي الاطراف الصناعية من الأطفال والشباب
-          </h3>
-          <p class="fs-24 my-5">
-            من خلال مبادرات الرعاية الصحية الخيرية لدينا، نقدم الخدمات الطبية
-            الأساسية والعلاجات والدعم للأطفال والشباب مبتوري الاطراف، ورعاية
-            رفاههم وتمكينهم من الازدهار.
-          </p>
-          <div class="d-flex gap-3 justify-content-end">
-            <button
-              class="border-0 rounded-2 justify-content-center bg-white text-main-heading-color py-2 d-flex align-items-center gap-2 w-25"
+          <div class="col-12 col-lg-6 text-center text-lg-end">
+            <h3 class="mb-4">
+              تقديم الرعاية الصحية لمستخدمي الاطراف الصناعية من الأطفال والشباب
+            </h3>
+            <p class="fs-24 my-4 my-lg-5">
+              من خلال مبادرات الرعاية الصحية الخيرية لدينا، نقدم الخدمات الطبية
+              الأساسية والعلاجات والدعم للأطفال والشباب مبتوري الاطراف، ورعاية
+              رفاههم وتمكينهم من الازدهار.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-end"
             >
-              +966 675 656 <i class="fa-solid fa-circle-info"></i>
-            </button>
-            <button class="btn button-color w-25 py-2">التبرع الان</button>
+              <button
+                class="border-0 rounded-2 justify-content-center bg-white text-main-heading-color py-2 d-flex align-items-center gap-2 w-100 w-sm-25"
+              >
+                +966 675 656 <i class="fa-solid fa-circle-info"></i>
+              </button>
+              <button class="btn button-color w-100 w-sm-25 py-2">
+                التبرع الان
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <!-- section 1 -->
-    <section id="section-1" class="section-padding">
+    <section id="section-1" class="section-padding overflow-hidden">
       <div class="container">
         <h2 class="text-center">
           تعزيز صحة الأطفال والشباب مبتوري الاطراف وسعادتهم
@@ -170,7 +174,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card rounded-4 shadow-sm p-1">
+            <div class="card rounded-4 shadow-sm p-3">
               <div class="card-body text-center">
                 <img src="images/earth.png" alt="earth" />
                 <h5 class="card-title fs-4 my-3 fw-medium">
@@ -178,7 +182,7 @@
                 </h5>
                 <p class="card-text">
                   تقديم رعاية طبية حيوية مصممة خصيصًا لتلبية الاحتياجات الفريدة
-                  لمبتوري الاطراف، وضمان صحتهم ورفاههم بشكل عام.
+                  لمبتوري الاطراف
                 </p>
               </div>
             </div>
@@ -189,20 +193,33 @@
             تعزيز الوحدة والتعاون مع شركائنا المتفانين
           </p>
           <figure
-            class="d-flex justify-content-between align-items-center gap-3"
+            class="row justify-content-center justify-content-lg-between align-items-center g-5"
           >
-            <img src="images/logo-5.png" alt="logo" />
-            <img src="images/logo-4.png" alt="logo" />
-            <img src="images/logo-3.png" alt="logo" />
-            <img src="images/logo-2.png" alt="logo" />
-            <img src="images/logo-1.png" alt="logo" />
+            <figure class="col-lg-2 col-6">
+              <img src="images/logo-5.png" alt="logo" />
+            </figure>
+            <figure class="col-lg-2 col-sm-6">
+              <img src="images/logo-4.png" alt="logo" />
+            </figure>
+            <figure class="col-lg-2 col-sm-6">
+              <img src="images/logo-3.png" alt="logo" />
+            </figure>
+            <figure class="col-lg-2 col-sm-6">
+              <img src="images/logo-2.png" alt="logo" />
+            </figure>
+            <figure class="col-lg-2 col-sm-6">
+              <img src="images/logo-1.png" alt="logo" />
+            </figure>
           </figure>
         </div>
       </div>
     </section>
 
     <!-- section 2 -->
-    <section id="section-1" class="section-padding bg-secondaryColor">
+    <section
+      id="section-2"
+      class="section-padding bg-secondaryColor overflow-hidden"
+    >
       <div class="container">
         <h2 class="text-center">برامج الرعاية الصحية لمبتوري الاطراف</h2>
         <h3 class="mt-4 mb-5 text-center">
@@ -322,35 +339,35 @@
               </div>
             </div>
           </div>
-          <button class="btn button-color w-25 mx-auto my-5">
-            عرض جميع الحالات
-          </button>
         </div>
+        <button class="btn button-color mx-auto mt-5 d-block">
+          عرض جميع الحالات
+        </button>
       </div>
     </section>
 
     <!-- section 3 -->
-    <section id="section-3" class="section-padding">
+    <section id="section-3" class="section-padding overflow-hidden">
       <div class="container">
-        <div class="d-flex align-content-center justify-content-between">
-          <div class="text-center w-25">
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6 text-center">
             <img src="images/icon-4.png" alt="icon" />
             <p class="fs-32 text-black my-3 fw-bold">90</p>
             <p class="fs-18 text-black my-0 fw-bold">توفير الاطراف الصناعية</p>
           </div>
-          <div class="text-center w-25">
+          <div class="col-lg-3 col-sm-6 text-center">
             <img src="images/icon-3.png" alt="icon" />
             <p class="fs-32 text-black my-3 fw-bold">800</p>
             <p class="fs-18 text-black my-0 fw-bold">جلسات العلاج الطبيعي</p>
           </div>
-          <div class="text-center w-25">
+          <div class="col-lg-3 col-sm-6 text-center">
             <img src="images/icon-2.png " alt="icon" />
             <p class="fs-32 text-black my-3 fw-bold">600</p>
             <p class="fs-18 text-black my-0 fw-bold">
               تأمين مواد استهلاكية (السليكون - لاينر)
             </p>
           </div>
-          <div class="text-center w-25">
+          <div class="col-lg-3 col-sm-6 text-center">
             <img src="images/icon-1.png" alt="icon" />
             <p class="fs-32 text-black my-3 fw-bold">30</p>
             <p class="fs-18 text-black my-0 fw-bold">
@@ -506,10 +523,15 @@
     </section>
 
     <!-- section 4 -->
-    <section id="section-4" class="section-padding bg-secondaryColor">
+    <section
+      id="section-4"
+      class="section-padding bg-secondaryColor overflow-hidden"
+    >
       <div class="container">
         <h2>بناء الروابط من خلال أعمال اللطف</h2>
-        <div class="d-flex justify-content-between align-items-center my-4">
+        <div
+          class="d-flex justify-content-md-between my-4 flex-column-reverse gap-3 flex-md-row align-items-md-center"
+        >
           <button class="btn button-color">عرض جميع المقالات</button>
           <h3>
             اكتشف آخر التحديثات لدينا
@@ -518,7 +540,7 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-lg-4 col-sm-6">
             <div class="bg-white rounded-4 overflow-hidden">
               <img src="images/section-6-1.png" alt="image" class="w-100" />
               <p class="text-black fs-24 px-3 py-2">
@@ -540,7 +562,7 @@
               </button>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-sm-6">
             <div class="bg-white rounded-4 overflow-hidden">
               <img src="images/section-8-2.png" alt="image" class="w-100" />
               <p class="text-black fs-24 px-3 py-2">
@@ -562,7 +584,7 @@
               </button>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-sm-6">
             <div class="bg-white rounded-4 overflow-hidden">
               <img src="images/section-8-1.png" alt="image" class="w-100" />
               <p class="text-black fs-24 px-3 py-2">
@@ -589,16 +611,16 @@
     </section>
 
     <!-- section 5 -->
-    <section id="section-5" class="section-padding">
+    <section id="section-5" class="section-padding overflow-hidden">
       <div class="container">
         <h2 class="text-center">اتصل بنا</h2>
         <h3 class="text-center my-4">
           نحن نقدم المساعدة والمساعدة
           <span class="d-block">المخصصة لمبتوري الاطراف</span>
         </h3>
-        <div class="row justify-content-between py-5">
-          <div class="col-md-5">
-            <div class="bg-secondaryColor p-5 rounded-3">
+        <div class="row justify-content-between g-4 py-5">
+          <div class="col-lg-5 order-2 order-lg-1">
+            <div class="bg-secondaryColor p-md-5 p-3 rounded-3">
               <h3 class="text-black fs-24">هل لديك سؤال أو تعليق؟</h3>
               <p class="my-3 fs-14">
                 تواصل معنا من خلال النموذج أدناه ودعنا نبدأ محادثة حول إحداث فرق
@@ -621,8 +643,8 @@
               <button class="btn button-color w-100">إرسال</button>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="d-flex gap-4">
+          <div class="col-lg-5 order-1 order-lg-2">
+            <div class="d-flex gap-4 justify-content-end">
               <div>
                 <p class="fs-24 text-black">الرياض - حي المروج</p>
                 <p class="fs-18">
@@ -636,7 +658,7 @@
                 class="contact-icon"
               />
             </div>
-            <div class="d-flex gap-4 my-4">
+            <div class="d-flex gap-4 my-4 justify-content-end">
               <div>
                 <p class="fs-24 text-black">0112777900 / 0552300321</p>
                 <p class="fs-18">
@@ -650,7 +672,7 @@
                 class="contact-icon"
               />
             </div>
-            <div class="d-flex gap-4">
+            <div class="d-flex gap-4 justify-content-end">
               <div>
                 <a href="" class="fs-24 text-black">info@a-ca.sa</a>
                 <p class="fs-18">
@@ -672,16 +694,16 @@
     <!-- section 6 -->
     <section
       id="section-6"
-      class="section-padding bg-secondaryColor position-relative"
+      class="section-padding bg-secondaryColor position-relative overflow-hidden"
     >
       <img
         src="images/left-leg.png"
         alt="section-6"
-        class="position-absolute top-0 start-0"
+        class="position-absolute top-0 start-0 z-0 d-none d-md-block"
       />
       <div class="container text-center">
         <h2>امنح هدية الصحة: ​​تبرع الي مبتوري الاطراف</h2>
-        <h3 class="my-5">
+        <h3 class="my-4 my-lg-5">
           تحويل الحياة: دعم الصحة النفسية
           <span class="d-block">لمبتوري الاطراف مع تبرعك</span>
         </h3>
@@ -690,8 +712,7 @@
     </section>
 
     <!-- Footer -->
-    <!-- Footer -->
-    <footer id="footer" class="bg-mainColor text-white">
+    <footer id="footer" class="bg-mainColor text-white overflow-hidden">
       <div class="container">
         <div class="row justify-content-between py-5">
           <div
